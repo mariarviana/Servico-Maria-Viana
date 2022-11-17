@@ -86,5 +86,5 @@
     </div>
     <?php include_once '_parts/_linkJS.php' ?>
 </body>
-
+<!--Maria Eduarda Ribeiro Viana-->
 </html>
