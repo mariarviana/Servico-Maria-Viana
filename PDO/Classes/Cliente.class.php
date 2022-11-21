@@ -100,7 +100,7 @@ Class Cliente extends Crud{
         nascimentoCliente = :nascimento, bairroCliente = :bairro, cidadeCliente = :cidade, estadoCliente = :estado WHERE $campo = :id";
         $stmt = Conexao::prepare($sqlAtualizar);
         $stmt->bindParam(':nome', $this->nomeCliente, PDO::PARAM_STR);
-        $stmt->bindParam(':endereco', $this->endereroCliente, PDO::PARAM_STR);
+        $stmt->bindParam(':endereco', $this->enderecoCliente, PDO::PARAM_STR);
         $stmt->bindParam(':telefone', $this->telefoneCliente, PDO::PARAM_STR);
         $stmt->bindParam(':nascimento', $this->nascimentoCliente, PDO::PARAM_STR);
         $stmt->bindParam(':bairro', $this->bairroCliente, PDO::PARAM_STR);

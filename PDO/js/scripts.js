@@ -4,8 +4,11 @@ function addServico(id, nome, valor) {
     alert(nome);
     const tcorpo = document.getElementById('itemOS');
     const linha = document.createElement('tr');
-    var inputID= '<td><input name="id[]" value = "'+id+'" readonly></td>';
-    var inputQtde= '<td><input name="qtde[]" value = "1" readonly></td>';
-    linha.innerHTML = inputID+ "</td>" + nome + "<td>150</td>"+inputQtde;
+    var inputID= '<td><input name="idServ[]" value = "'+id+'" readonly size="5" class="form-control-plaintext"></td>';
+    var inputNome= '<td>'+nome+'</td>';
+    
+    var inputValor= '<td><input name="valorServ[]" value = "'+valor+'" size="5" class="form-control"></td>';
+    //var inputQtde= '<td><input name="qtde[]" value = "1" readonly></td>';
+    linha.innerHTML = inputID+inputNome;
     tcorpo.appendChild(linha);
 }

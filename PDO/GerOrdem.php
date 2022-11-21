@@ -155,10 +155,14 @@
                                     <td><?php echo $row->nomeServico ?></td>
                                     <td>R$ <?php echo $row->precoServico ?></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary" onclick="addServico(<?php echo $row->idServico ?>, <?php echo $row->nomeServico ?>, <?php echo $row->precoServico ?>)"><i class="bi bi-plus-circle"></i></button>
+                                        <button type="button" class="btn btn-primary" onclick="addServico('<?php echo $row->idServico ?>',
+                                        '<?php echo $row->nomeServico ?>',
+                                        '<?php echo $row->precoServico ?>')"><i class="bi bi-plus-circle"></i></button>
                                     </td>
                                 </tr>
-                            <?php } ?>
+                            <?php 
+                            } 
+                            ?>
                         </tbody>
                     </table>
                 </div>
@@ -173,5 +177,4 @@
     <?php include '_parts/_linkJS.php'; ?>
 </body>
 <!--Maria Eduarda Ribeiro Viana-->
-
 </html>
