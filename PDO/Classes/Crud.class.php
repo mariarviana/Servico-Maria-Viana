@@ -33,4 +33,16 @@
             $stmt->execute();
             return $stmt->fetchAll();
         }
+
+        public function listarOrdenada($campo , $par = 'C'){
+            $sqlSelect = "select * from {$this->tabela} ORDER BY :campo";
+            if(($par === 'D') or ($par === 'd')){
+                $sqlSelect .= 'desc';
+            }
+
+            $stmt = Conexao::prepare($sqlSelect);
+            $stmt -> bindParam(':campo', $campo, PDO::PARAM_STR);
+            $stmt->execute();
+            return $stmt->fetchAll();
+        }
     }
