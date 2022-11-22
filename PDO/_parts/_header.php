@@ -4,6 +4,7 @@ TML
   <?php 
 $arqui = explode(DIRECTORY_SEPARATOR,$_SERVER['PHP_SELF']);
 ?>
+<!--Maria Eduarda Ribeiro Viana-->
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="color:white">
   <div class="container-fluid">
