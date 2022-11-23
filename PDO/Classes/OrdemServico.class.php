@@ -1,7 +1,7 @@
 <?php
 
 class OrdemServico extends Crud{
-    protected $tabela = 'ordemservico';
+    protected $tabela = 'OrdemServico';
     private $idOS;
     private $dataOS;
     private $idCliente;

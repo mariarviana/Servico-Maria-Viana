@@ -2,7 +2,7 @@
 
 Class Cliente extends Crud{
 
-    protected $tabela = 'cliente';
+    protected $tabela = 'Cliente';
     private $idCliente;
     private $nomeCliente;
     private $enderecoCliente;
