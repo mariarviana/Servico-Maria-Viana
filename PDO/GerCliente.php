@@ -93,9 +93,38 @@
 
                         </div>
                         <div class="form-group mb-3">
-                            <label for="txtEstado">Estado</label>
-                            <input type="text" class="form-control" id="txtEstado" name="txtEstado" placeholder="Estado" value="<?php echo isset($clienteEdit->estadoCliente) ? $clienteEdit->estadoCliente : null ?>">
-
+                        <label for="sltEstado">Estado</label>
+                    <select id="sltEstado" name="sltEstado" class="form-select" aria-label="Default select example">
+                    <option selected>Selecione um estado</option>
+                    
+                        <?php $selEstado = isset ($clienteEdit->estadoCliente) ? $clienteEdit->estadoCliente : null?>
+                        <option value="AC" <?php if($selEstado=='AC') echo 'selected' ?>>Acre</option>
+                        <option value="AL" <?php if($selEstado=='AL') echo 'selected' ?>>Alagoas</option>
+                        <option value="AP" <?php if($selEstado=='AP') echo 'selected' ?>>Amapá</option>
+                        <option value="AM" <?php if($selEstado=='AM') echo 'selected' ?>>Amazonas</option>
+                        <option value="BA" <?php if($selEstado=='BA') echo 'selected' ?>>Bahia</option>
+                        <option value="CE" <?php if($selEstado=='CE') echo 'selected' ?>>Ceará</option>
+                        <option value="DF" <?php if($selEstado=='DF') echo 'selected' ?>>Distrito Federal</option>
+                        <option value="ES" <?php if($selEstado=='ES') echo 'selected' ?>>Espírito Santo</option>
+                        <option value="GO" <?php if($selEstado=='GO') echo 'selected' ?>>Goiás</option>
+                        <option value="MA" <?php if($selEstado=='MA') echo 'selected' ?>>Maranhão</option>
+                        <option value="MT" <?php if($selEstado=='MT') echo 'selected' ?>>Mato Grosso</option>
+                        <option value="MS" <?php if($selEstado=='MS') echo 'selected' ?>>Mato Grosso do Sul</option>
+                        <option value="MG" <?php if($selEstado=='MG') echo 'selected' ?>>Minas Gerais</option>
+                        <option value="PA" <?php if($selEstado=='PA') echo 'selected' ?>>Pará</option>
+                        <option value="PB" <?php if($selEstado=='PB') echo 'selected' ?>>Paraíba</option>
+                        <option value="PR" <?php if($selEstado=='PR') echo 'selected' ?>>Paraná</option>
+                        <option value="PE" <?php if($selEstado=='PE') echo 'selected' ?>>Pernambuco</option>
+                        <option value="PI" <?php if($selEstado=='PI') echo 'selected' ?>>Piauí</option>
+                        <option value="RJ" <?php if($selEstado=='RJ') echo 'selected' ?>>Rio de Janeiro</option>
+                        <option value="RN" <?php if($selEstado=='RN') echo 'selected' ?>>Rio Grande do Norte</option>
+                        <option value="RS" <?php if($selEstado=='RS') echo 'selected' ?>>Rio Grande do Sul</option>
+                        <option value="RO" <?php if($selEstado=='RO') echo 'selected' ?> >Rondônia</option>
+                        <option value="RR" <?php if($selEstado=='RR') echo 'selected' ?>>Roraima</option>
+                        <option value="SC" <?php if($selEstado=='SC') echo 'selected' ?>>Santa Catarina</option>
+                        <option value="SP" <?php if($selEstado=='SP') echo 'selected' ?>>São Paulo</option>
+                        <option value="SE" <?php if($selEstado=='SE') echo 'selected' ?>>Sergipe</option>
+                        <option value="TO" <?php if($selEstado=='TO') echo 'selected' ?>>Tocantins</option>
                         </div>
                         <button type="submit" class="btn btn-primary" name="btnGravar">Salvar</button>
                     </form>
